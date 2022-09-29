@@ -1,0 +1,8 @@
+.nav,a{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 30px;
+    text-decoration: none;
+    background-color: gray;
+}
