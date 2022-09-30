@@ -1,10 +1,17 @@
+window.onload=function(){
+    const btn = document.getElementById('btn');
 
-console.log(h1.children); //children returns an emptty list 
-
-let ul = document.querySelector("ul");
-console.log(ul.childNodes);// gives everything: text or another element
-console.log(ul.lastElementChild); // 
-console.log(ul.lastElementChild.childNodes[0].nodeType);
-
-//se;ect the slection with an id of contianer wihtout uisng query selector
-console.log(document.getElementById("con"));
+    btn.addEventListener('click', function onClick(event) {
+      // 👇️ Change text color globally
+      if(document.body.style.color == 'black'){
+        document.body.style.color = 'darkgreen';
+      }
+      else if (document.body.style.color =='darkgreen') {
+        document.body.style.color = 'purple';
+      } else {
+        document.body.style.color = 'black';
+      }
+      // 👇️ Change text color for clicked element only
+      // event.target.style.color = 'salmon';
+    });
+}
