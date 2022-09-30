@@ -5,11 +5,9 @@ body{
 ul {
     list-style-type: none;
     margin-top: 0;
-    padding: 0;
+    /* padding: 0; */
     overflow: hidden;
     background-color: #333;
-    height:100%;
-    width:100%;
   }
   
 li {
@@ -43,4 +41,28 @@ p{
     color:white;
     font-family: Helvetica;
     
+}
+.about{
+    width:  100%;
+    height: auto;
+    object-fit: cover;
+    justify-content: space-between;
+    margin-right: 30px;   /* Horizontal Space */
+    margin-bottom: 30px;
+    
+}
+#btn{
+    background-color: #2e2c2c; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-style: double;
+}
+#btn:hover{
+    background-color: red;
+    cursor: pointer;
 }
