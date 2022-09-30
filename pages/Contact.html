@@ -13,11 +13,53 @@
         <li><a href="../index.html">Home</a></li>
         <li> <a href="./About.html">About</a></li>
     </ul>
-    <div style = "text-align:center; font-style:bold;font-size:3rem;"> Welcome to the Contact page</div>
-     <ul>
-        <img src="../img/coding.jpeg" alt="Coding">
-        <img src="../img/design.jpeg" alt="Designer">
-        <img src="../img/tikka.jpeg" alt="Food">
-     </ul>
+    <div style = "text-align:center; font-style:bold;font-size:3rem;"> Welcome to the Contact Page</div>
+
+    <table>
+        <tr> <th>Site Owners</th></tr>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Phone Number</th>
+        </tr>
+        <tr>
+          <td>Arifur</td>
+          <td>Rahman</td>
+          <td>7185058848</td>
+        </tr>
+        <tr>
+          <td>James</td>
+          <td>Smith</td>
+          <td>5558884444</td>
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td>Doe</td>
+            <td>1690420210</td>
+          </tr>
+      </table>
+      <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
 </body>
 </html>
